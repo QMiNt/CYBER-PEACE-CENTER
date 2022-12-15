@@ -30,27 +30,33 @@ export const repo = async (args: string[]): Promise<string> => {
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
+  return `Hi, We Are ${config.name}. 
+Welcome to Our website!
 More about me:
 'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+'enroll'   - for information about recruitment.
+'domains'  - for information about Domains.
+'domains'  - for information about Domains.
+`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
   window.open(`${config.resume_url}`);
   return 'Opening resume...';
 };
+export const reesume = async (args: string[]): Promise<string> => {
+  window.open(`${config.resume_url}`);
+  return 'Opening resume...';
+};
 
 // Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
-};
+// export const donate = async (args: string[]): Promise<string> => {
+//   return `thank you for your interest. 
+// here are the ways you can support my work:
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+// `;
+// };
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
@@ -141,17 +147,121 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
 
-Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
-`;
+  <div style="display: flex;">
+  <pre>
+      :'######::'##:::'##:'########::'########:'########::                                       
+      '##... ##:. ##:'##:: ##.... ##: ##.....:: ##.... ##:
+       ##:::..:::. ####::: ##:::: ##: ##::::::: ##:::: ##:
+       ##:::::::::. ##:::: ########:: ######::: ########::
+       ##:::::::::: ##:::: ##.... ##: ##...:::: ##.. ##:::
+       ##::: ##:::: ##:::: ##:::: ##: ##::::::: ##::. ##::
+      . ######::::: ##:::: ########:: ########: ##:::. ##:
+       :......::::::..:::::........:::........::..:::::..::
+       '########::'########::::'###:::::'######::'########:
+       ##.... ##: ##.....::::'## ##:::'##... ##: ##.....::
+       ##:::: ##: ##::::::::'##:. ##:: ##:::..:: ##:::::::
+       ########:: ######:::'##:::. ##: ##::::::: ######:::
+       ##.....::: ##...:::: #########: ##::::::: ##...::::
+       ##:::::::: ##::::::: ##.... ##: ##::: ##: ##:::::::
+       ##:::::::: ########: ##:::: ##:. ######:: ########:
+       ..:::::::::........::..:::::..:::......:::........::
+   :'######::'########:'##::: ##:'########:'########:'########::
+   '##... ##: ##.....:: ###:: ##:... ##..:: ##.....:: ##.... ##:
+    ##:::..:: ##::::::: ####: ##:::: ##:::: ##::::::: ##:::: ##:
+    ##::::::: ######::: ## ## ##:::: ##:::: ######::: ########::
+    ##::::::: ##...:::: ##. ####:::: ##:::: ##...:::: ##.. ##:::
+    ##::: ##: ##::::::: ##:. ###:::: ##:::: ##::::::: ##::. ##::
+   . ######:: ########: ##::. ##:::: ##:::: ########: ##:::. ##:
+   :......:::........::..::::..:::::..:::::........::..:::::..::
+  </pre>
+
+
+
+<pre style="font: 8px/4px monospace;">                                                                  
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                       ^                                    
+                    ~  _                                    
+                   .- ^;                                    
+                   o  ~:                                    
+                  _;  :~                                    
+                  e'  =^                                    
+                 ~*   *                                     
+                 =;   !                                     
+                 !~  ^e                                     
+                '%   -o                                     
+                ~?   ;i                                     
+                :e   ==                                     
+                ;*   i+                                     
+             ^  ;*   i+                                     
+             ;  ;e   i=                               '     
+            ^;  :?   ii                             ~^ __   
+            ;-  -%   +*                           ^_ ^*_    
+            o.  ^%.  :?                          ~_ ~?-     
+            e^   ?_  ~%'                        ~_ -%_      
+            !.   *i  '%_                     ' ^: ~%;       
+            e~   ;?   !i                    _  + '?o        
+         .^ o:   ^%~  i?                   +  +' o?'        
+         +. +i    e=  _%~                 ;^ .: _%_         
+         *~ ~?    :?  '%i                ^;  =  !e          
+         ?-  ?-    ?:  o%'               =  ^: :%~          
+         %:  +*    ;!  -%+            '~^;  +  !e           
+         %=  '%~    ?_  !?            = +'  + -%_           
+         !*   +!    _!  :%;          =^ i  .~ o?            
+         o%    !=    *_  ??         ^o '+  :  %+            
+         ;%-   ~%-   'e  :%+        i~ --  : _%.            
+         ^%i    +%.   -;  !%'      '!  ;^  _ i?             
+          e%'    i?^   :^ -%o      :=  =   _ !i             
+          -%=     i!^   ~  i%-     o-  +   -'%_             
+           *%^     =!^     '?!     ?   +   ~~%^             
+      -    .%e      _!.     -%=   .e   ;   .:?              
+      :^    :%=      'i~     i%-  -i   :   ^+*              
+      -;     i%;       .'     !?' ;;   ~'   ==              
+      '!      i%+             ^?o +_    .   o;              
+       o;      =%i             -%;+~    ^   o_              
+       .%.      :%e^            +%o.        o-              
+        +!^      ^*%;            i%.        o~              
+         o!^       -ee.           eo        =.              
+          i?_        .=;          ^?_       +.              
+           _?*^         '          :?       _.              
+         '  'i%i.                   *+      .~ '__^         
+          :^  ^=%e:'                ^?'      -+%eieo^       
+           ;='   _i?*:^              +=      e*.  ^+!^      
+            .oi-    ^-:_^           ~ !'    e=    _i.*      
+              ^+*eo=;::-^           ^-;;   *;     :: i:     
+                  '...'              +'e  o_         :_~    
+                     ~'              ^;+-i.        ^o=;+    
+              __      =o;_:+_'        o+o         ^e^       
+               _e+-~-_^'-_~'          ;.+         !~        
+                 -;;-    '    ^-      _~_        i=         
+                         ';=ii:       ;''       ~?'         
+                '--.._;-        '_    ;         e;          
+                  '--^     ~_:;+;    ~         _?           
+-                          '     '              !+           
+^o-                 '~   ~:'    -~             :%'           
+'   oo.                ':+;~     +:             ?=            
+~'   _?o~                .    ^;e-              +%^            
+=     +?e;^             ':+=i=-                ^%=             
+_:      ;!%e+-^      '-+-                      *?'             
+o~       ~=!%%%!eee?e;                        +%:              
+*~         '.-__-.                          :%o               
+'o;           '                           +%!'               
+  -o=:__:+ii+-                         'o%e'                
+-~  '~__-.   -:^  ':~~.^             '+%%i                  
+ :='      ~io-^.;**=;o%%!o=+;:_~' ^:o%%!-                   
+  ^io;:;i*+..-+eio!!+' _i!%!e**e!%%%?i-                     
+     ^~.' ._^o=o%e_       '~_;+++;_^                        
+  ^'    ^:. o:!e~                                           
+   .~^~:-  i:i-                                             
+    '^'   _+'                                               
+    ~^   ^i                                                 
+     __ ^=                                                  
+      ^;_                                                 
+</pre>
+</div>
+`
 };
